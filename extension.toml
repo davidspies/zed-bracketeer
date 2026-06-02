@@ -1,0 +1,82 @@
+id = "bracketeer"
+name = "Bracketeer"
+description = "Manipulate brackets and quotes around the active editor selection."
+version = "0.1.0"
+schema_version = 1
+authors = ["Tomas Pustelnik", "David Spies"]
+repository = "https://github.com/davidspies/zed-bracketeer"
+
+[editor_commands."bracketeer.swapBrackets"]
+description = "Swap the surrounding bracket pair to the next bracket type."
+
+[editor_commands."bracketeer.removeBrackets"]
+description = "Remove the surrounding bracket pair."
+
+[editor_commands."bracketeer.selectBracketContent"]
+description = "Select the content inside the surrounding bracket pair."
+
+[editor_commands."bracketeer.changeBracketsTo.parentheses"]
+description = "Change the surrounding bracket pair to parentheses."
+
+[editor_commands."bracketeer.changeBracketsTo.square"]
+description = "Change the surrounding bracket pair to square brackets."
+
+[editor_commands."bracketeer.changeBracketsTo.curly"]
+description = "Change the surrounding bracket pair to curly braces."
+
+[editor_commands."bracketeer.changeBracketsTo.angle"]
+description = "Change the surrounding bracket pair to angle brackets."
+
+[editor_commands."bracketeer.swapQuotes"]
+description = "Swap the surrounding quote pair to the next quote type."
+
+[editor_commands."bracketeer.removeQuotes"]
+description = "Remove the surrounding quote pair."
+
+[editor_commands."bracketeer.selectQuotesContent"]
+description = "Select the content inside the surrounding quote pair."
+
+[editor_commands."bracketeer.changeQuotesTo.single"]
+description = "Change the surrounding quote pair to single quotes."
+
+[editor_commands."bracketeer.changeQuotesTo.double"]
+description = "Change the surrounding quote pair to double quotes."
+
+[editor_commands."bracketeer.changeQuotesTo.backtick"]
+description = "Change the surrounding quote pair to backticks."
+
+[[keybindings]]
+command = "bracketeer.swapBrackets"
+context = "Editor || GitDiff"
+key = "ctrl-alt-shift-k"
+macos = "cmd-alt-shift-k"
+
+[[keybindings]]
+command = "bracketeer.removeBrackets"
+context = "Editor || GitDiff"
+key = "ctrl-alt-shift-i"
+macos = "cmd-alt-shift-i"
+
+[[keybindings]]
+command = "bracketeer.selectBracketContent"
+context = "Editor || GitDiff"
+key = "ctrl-alt-shift-h"
+macos = "cmd-alt-shift-h"
+
+[[keybindings]]
+command = "bracketeer.swapQuotes"
+context = "Editor || GitDiff"
+key = "ctrl-alt-shift-semicolon"
+macos = "cmd-alt-shift-semicolon"
+
+[[keybindings]]
+command = "bracketeer.removeQuotes"
+context = "Editor || GitDiff"
+key = "ctrl-alt-shift-quote"
+macos = "cmd-alt-shift-quote"
+
+[[keybindings]]
+command = "bracketeer.selectQuotesContent"
+context = "Editor || GitDiff"
+key = "ctrl-alt-shift-0"
+macos = "cmd-alt-shift-0"

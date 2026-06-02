@@ -1,0 +1,15 @@
+[package]
+name = "zed_bracketeer"
+version = "0.1.0"
+edition = "2024"
+publish = false
+license = "MIT"
+
+[workspace]
+
+[lib]
+path = "src/bracketeer.rs"
+crate-type = ["cdylib"]
+
+[dependencies]
+zed_extension_api = { path = "../zed/crates/extension_api" }
